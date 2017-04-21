@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ness.edu.fragmentsgallery.GalleryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ic_keyboard_arrow_left"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ivGallery"
+        android:layout_alignStart="@+id/ivGallery" />
+
+    <ImageView
+        android:id="@+id/ivGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLeft"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/apples_gal" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ivGallery"
+        android:layout_alignRight="@+id/ivGallery"
+        android:layout_below="@+id/ivGallery"
+        android:background="@drawable/ic_keyboard_arrow_right" />
+
+</RelativeLayout>
